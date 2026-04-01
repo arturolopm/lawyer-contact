@@ -15,9 +15,9 @@ const bodyFont = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Amanda Abogada | Derecho civil, familia y sucesiones en Colombia",
+  title: "Amanda Abogada | Abogada en Colombia para contratos y propiedad",
   description:
-    "Asesoria juridica en derecho civil, contratos, pertenencia, sucesiones, familia, conciliacion, representacion extrajudicial y pensiones en Colombia. Agenda una llamada para revisar tu caso.",
+    "Abogada en Colombia para asesoria juridica, elaboracion y revision de contratos, proceso de pertenencia, legalizacion de propiedad y otros asuntos civiles, familiares y patrimoniales.",
 };
 
 export default function RootLayout({
