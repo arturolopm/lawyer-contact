@@ -21,26 +21,26 @@ const whatsappMessage = encodeURIComponent(
 const whatsappHref = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
 const heroHighlights = [
-  'Abogada en Colombia para asesoria juridica, contratos, proceso de pertenencia y legalizacion de propiedad, con cobertura tambien en derecho civil, familia y patrimonio.',
-  'Revision documental y estrategia legal para firmar, negociar, reclamar o regularizar con mas claridad y menos riesgo.',
-  'Orientacion concreta sobre viabilidad, documentos clave, tiempos y honorarios desde la primera conversacion.',
+  'Firma con mas tranquilidad sabiendo que aceptas, que debes ajustar y que riesgo no vale la pena asumir.',
+  'Ordena la situacion del inmueble para formalizar, negociar o proyectar decisiones patrimoniales con menos incertidumbre.',
+  'Sal de la consulta con una ruta clara sobre documentos, riesgos y siguiente paso.',
 ];
 
 const trustPillars = [
   {
-    title: 'Contratos con mejor respaldo',
+    title: 'Firmar con mas tranquilidad',
     description:
-      'Te ayudamos a redactar, ajustar o revisar clausulas para que el negocio tenga alcance claro, obligaciones definidas y menos riesgo de conflicto.',
+      'El objetivo no es solo tener un contrato, sino que puedas cerrar acuerdos con reglas claras y menos espacio para problemas despues.',
   },
   {
-    title: 'Propiedad en regla',
+    title: 'Mover el inmueble con mas seguridad',
     description:
-      'Ordenamos documentos, antecedentes y estrategia para procesos de pertenencia y rutas de legalizacion de propiedad con enfoque practico.',
+      'Pertenencia y legalizacion se trabajan para que dejes de improvisar y avances con mas claridad sobre viabilidad, pruebas y tramites.',
   },
   {
-    title: 'Cobertura amplia, foco claro',
+    title: 'Salir sabiendo que hacer',
     description:
-      'Tambien atendemos derecho civil, sucesiones, familia, conciliacion, representacion extrajudicial y pensiones para darte una ruta clara desde la primera consulta.',
+      'La consulta inicial esta pensada para que termines con prioridades claras, no con mas dudas, tambien en asuntos civiles, familiares y patrimoniales.',
   },
 ];
 
@@ -48,52 +48,69 @@ const practiceAreas = [
   {
     title: 'Asesoria juridica',
     description:
-      'Consultas para resolver dudas, medir riesgos y definir la ruta legal en contratos, derecho civil, familia, sucesiones y asuntos patrimoniales.',
-    items: [
-      'Analisis inicial del caso',
-      'Orientacion preventiva y estrategica',
-      'Definicion de siguientes pasos y documentos clave',
-    ],
+      'Sales con mas claridad sobre tu situacion, los riesgos principales y el siguiente paso que mas te conviene.',
+    items: ['Mas claridad para decidir', 'Menos margen para errores costosos', 'Prioridades y documentos claros'],
   },
   {
     title: 'Elaboracion de contratos',
     description:
-      'Redactamos contratos a la medida para dejar claras obligaciones, plazos, riesgos y mecanismos de proteccion.',
+      'Redactamos acuerdos para que puedas cerrar el negocio con reglas claras y menos espacio para discusiones futuras.',
     items: [
-      'Prestacion de servicios y acuerdos civiles',
-      'Compraventa, arrendamiento y promesas',
-      'Ajustes segun riesgos y necesidades del caso',
+      'Obligaciones y plazos bien definidos',
+      'Clausulas pensadas para prevenir conflicto',
+      'Mas respaldo para negociar y exigir',
     ],
   },
   {
     title: 'Revision de contratos',
     description:
-      'Revisamos clausulas antes de que firmes, negocies o reclames, para que entiendas riesgos, obligaciones y ajustes recomendados.',
+      'Antes de firmar, entiendes exactamente que aceptas, donde esta el riesgo y que conviene renegociar.',
     items: [
-      'Revision previa a firma',
-      'Observaciones y recomendaciones de ajuste',
-      'Soporte para negociacion o requerimientos',
+      'Alertas antes de comprometerte',
+      'Ajustes concretos para protegerte',
+      'Base clara para negociar',
     ],
   },
   {
     title: 'Proceso de pertenencia',
     description:
-      'Estructuramos la ruta juridica y documental para reclamar la propiedad cuando la posesion cumple los requisitos legales.',
+      'Avanzas con una ruta mas clara para reclamar la propiedad y fortalecer el caso con mejor orden probatorio.',
     items: [
-      'Revision de antecedentes y pruebas',
-      'Organizacion del expediente',
-      'Acompanamiento en la estrategia del proceso',
+      'Mas claridad sobre viabilidad',
+      'Pruebas y documentos mejor organizados',
+      'Menos pasos inutiles',
     ],
   },
   {
     title: 'Legalizacion de propiedad',
     description:
-      'Te ayudamos a revisar titulos, documentos y pasos necesarios para formalizar la situacion juridica del inmueble.',
+      'Buscamos que el inmueble quede listo para que puedas decidir, negociar o proyectar su uso con mayor seguridad juridica.',
     items: [
-      'Estudio documental del inmueble',
-      'Regularizacion y soporte registral',
-      'Definicion de tramites y ruta de formalizacion',
+      'Documentos en mejor orden',
+      'Ruta registral y tramites mas claros',
+      'Menos incertidumbre sobre el inmueble',
     ],
+  },
+];
+
+const testimonialThemes = [
+  {
+    label: 'Antes de firmar',
+    title: 'Mas tranquilidad para negociar y cerrar',
+    description:
+      'Quienes llegan por contratos suelen buscar una sola cosa: entender que estan aceptando, que deben ajustar y que no vale la pena dejar abierto.',
+  },
+  {
+    label: 'Antes de formalizar',
+    title: 'Mas seguridad para mover el tema del inmueble',
+    description:
+      'En pertenencia y legalizacion, lo que mas se valora es dejar de improvisar y avanzar con documentos, pruebas y pasos mas claros.',
+  },
+  {
+    label: 'Despues de la consulta',
+    title: 'Un siguiente paso claro en lugar de mas dudas',
+    description:
+      'La primera asesoria tiene mas valor cuando terminas sabiendo que hacer primero, que riesgo corregir ya y que puede esperar.',
   },
 ];
 
@@ -111,19 +128,19 @@ const processSteps = [
     step: '01',
     title: 'Escuchamos tu caso y tu objetivo',
     description:
-      'Entendemos si necesitas asesoria juridica, elaboracion o revision de contratos, proceso de pertenencia, legalizacion de propiedad o apoyo en otro asunto civil, familiar o patrimonial.',
+      'Ubicamos que necesitas destrabar, que te preocupa hoy y si el asunto pasa por contratos, propiedad u otra materia juridica.',
   },
   {
     step: '02',
     title: 'Revisamos documentos y riesgos',
     description:
-      'Revisamos documentos, riesgos y urgencias para definir si conviene negociar, conciliar, formalizar o avanzar con una actuacion mas amplia.',
+      'Identificamos que documento importa de verdad, donde esta el riesgo principal y que conviene corregir primero.',
   },
   {
     step: '03',
     title: 'Definimos alcance, tiempos y honorarios',
     description:
-      'Con esa base, te presentamos una propuesta clara sobre el trabajo a realizar y el nivel de acompanamiento recomendado.',
+      'Con eso, sales sabiendo cual es el siguiente paso mas razonable y el tipo de acompanamiento que mejor hace sentido.',
   },
 ];
 
@@ -252,18 +269,18 @@ export default async function Home({ searchParams }: HomeProps) {
           <section className='mx-auto grid max-w-7xl gap-12 px-6 py-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(22rem,0.8fr)] lg:px-10 lg:py-24'>
             <div>
               <div className='inline-flex rounded-full border border-secondary/15 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-secondary'>
-                Abogada y asesoria juridica en Colombia
+                Abogada en Colombia para contratos y propiedad
               </div>
 
               <h1 className='mt-8 max-w-4xl font-serif text-5xl leading-[0.95] tracking-[-0.03em] text-primary sm:text-6xl lg:text-7xl'>
-                Asesoria juridica en Colombia para contratos, pertenencia y legalizacion de propiedad.
+                Firma, formaliza y decide con mas tranquilidad juridica.
               </h1>
 
               <p className='mt-8 max-w-3xl text-lg leading-8 text-ink-soft sm:text-xl'>
-                Agenda una llamada para revisar tu caso. Priorizamos asesoria juridica,
-                elaboracion y revision de contratos, proceso de pertenencia y legalizacion de
-                propiedad, y tambien atendemos derecho civil, sucesiones, familia, conciliacion,
-                representacion extrajudicial y pensiones.
+                Recibe una asesoria juridica para revisar tu caso y actuar con mas claridad. El
+                foco principal esta en elaboracion y revision de contratos, proceso de pertenencia
+                y legalizacion de propiedad, sin dejar por fuera otros asuntos civiles, familiares
+                y patrimoniales.
               </p>
 
               <div className='mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap'>
@@ -279,20 +296,19 @@ export default async function Home({ searchParams }: HomeProps) {
                   href='#agenda'
                   className={primaryLinkClass}
                 >
-                  Agendar asesoria inicial
+                  Quiero revisar mi caso
                 </a>
                 <a
                   href='#servicios'
                   className={secondaryLinkClass}
                 >
-                  Ver servicios juridicos
+                  Ver como puedo ayudarte
                 </a>
               </div>
 
               <p className='mt-4 max-w-2xl text-sm leading-7 text-ink-soft'>
-                Tambien puedes escribir por WhatsApp para contarnos si necesitas revisar un
-                contrato, ordenar documentos del inmueble o validar la ruta de otro asunto
-                juridico.
+                Tambien puedes escribir por WhatsApp si hoy lo que necesitas es una decision clara:
+                firmar, reclamar, formalizar o saber si conviene esperar.
               </p>
 
               <div className='mt-12 grid gap-4 sm:grid-cols-2'>
@@ -314,15 +330,15 @@ export default async function Home({ searchParams }: HomeProps) {
                   Asesoria inicial
                 </p>
                 <h2 className='mt-4 font-serif text-3xl leading-tight text-primary'>
-                  Lo que definimos en tu primera consulta
+                  Lo que te llevas de la primera consulta
                 </h2>
 
                 <ul className='mt-8 space-y-5'>
                   {[
-                    'Si te conviene una asesoria puntual, una revision de contrato, un proceso de pertenencia, una legalizacion de propiedad o una ruta juridica mas amplia.',
-                    'Que documentos conviene revisar primero para no perder tiempo ni enfoque.',
-                    'Que riesgos existen hoy y cual es el siguiente paso mas razonable.',
-                    'Como se define el alcance del trabajo y la propuesta de honorarios.',
+                    'Si hoy te conviene firmar, negociar, formalizar, reclamar o esperar.',
+                    'Que documento o prueba cambia realmente la decision.',
+                    'Que riesgo vale la pena corregir primero.',
+                    'Cual es el siguiente paso que te evita tiempo, costo o desgaste innecesario.',
                   ].map((item) => (
                     <li
                       key={item}
@@ -342,9 +358,8 @@ export default async function Home({ searchParams }: HomeProps) {
                     Honorarios con alcance claro
                   </p>
                   <p className='mt-3 text-base leading-7 text-ink-soft'>
-                    Cada asunto se analiza de forma individual. La asesoria inicial sirve para
-                    medir viabilidad, ordenar documentos y definir si necesitas una intervencion
-                    puntual o acompanamiento juridico integral.
+                    El objetivo no es llenarte de terminos tecnicos. Es que termines la
+                    conversacion con una ruta clara sobre que hacer, que evitar y como avanzar.
                   </p>
                 </div>
 
@@ -377,14 +392,39 @@ export default async function Home({ searchParams }: HomeProps) {
             </div>
           </section>
 
+          <section className='mx-auto max-w-7xl px-6 py-24 lg:px-10'>
+            <SectionHeader
+              eyebrow='Prueba social'
+              title='Lo que mas valoran quienes consultan.'
+              description='No son promesas abstractas. Son los resultados que normalmente se buscan al pedir ayuda para contratos, propiedad o una decision juridica importante.'
+            />
+
+            <div className='mt-12 grid gap-6 lg:grid-cols-3'>
+              {testimonialThemes.map((item) => (
+                <article
+                  key={item.title}
+                  className='rounded-[2rem] border border-line bg-white/82 p-7 shadow-[0_18px_60px_rgba(15,23,42,0.06)]'
+                >
+                  <p className='text-xs font-semibold uppercase tracking-[0.22em] text-secondary'>
+                    {item.label}
+                  </p>
+                  <h3 className='mt-4 font-serif text-3xl leading-tight text-primary'>
+                    {item.title}
+                  </h3>
+                  <p className='mt-5 leading-7 text-ink-soft'>{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
           <section
             id='servicios'
             className='scroll-mt-28 mx-auto max-w-7xl px-6 py-24 lg:px-10'
           >
             <SectionHeader
               eyebrow='Servicios principales'
-              title='Servicios juridicos principales para contratos y propiedad.'
-              description='Estos son los servicios que mas suelen activar una consulta inicial. Tambien atendemos otros asuntos civiles, familiares y patrimoniales cuando el caso lo requiere.'
+              title='Servicios pensados para que tomes decisiones con menos riesgo.'
+              description='La pagina prioriza contratos, pertenencia y legalizacion de propiedad, pero el criterio detras de cada servicio es el mismo: ayudarte a actuar con mas claridad y mejor respaldo.'
             />
 
             <div className='mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
@@ -424,11 +464,11 @@ export default async function Home({ searchParams }: HomeProps) {
                 Cobertura complementaria
               </p>
               <h3 className='mt-4 font-serif text-3xl leading-tight text-primary'>
-                Tambien atendemos otras consultas civiles, familiares y patrimoniales.
+                Tambien atendemos otras decisiones juridicas sensibles.
               </h3>
               <p className='mt-4 max-w-3xl leading-7 text-ink-soft'>
-                Si tu consulta no encaja de forma exacta en los servicios principales, la llamada
-                inicial sirve para ubicar la materia, revisar viabilidad y definir la mejor ruta.
+                Si tu caso no encaja de forma exacta en los servicios principales, la consulta
+                inicial sirve para ubicar la materia, medir viabilidad y definir la mejor ruta.
               </p>
 
               <div className='mt-6 flex flex-wrap gap-3'>
@@ -452,8 +492,8 @@ export default async function Home({ searchParams }: HomeProps) {
               <div>
                 <SectionHeader
                   eyebrow='Como trabajamos'
-                  title='Como trabajamos tu consulta juridica.'
-                  description='La primera llamada aterriza viabilidad, documentos y siguiente paso sin enredarte con tecnicismos innecesarios.'
+                  title='Una consulta pensada para que salgas con una ruta clara.'
+                  description='La conversacion inicial ordena lo importante para que no sigas tomando decisiones juridicas a ciegas.'
                 />
 
                 <div className='mt-10 space-y-5'>
@@ -482,7 +522,7 @@ export default async function Home({ searchParams }: HomeProps) {
                     Antes de agendar
                   </p>
                   <h3 className='mt-4 font-serif text-3xl leading-tight'>
-                    Ten a la mano esta informacion para aprovechar mejor la asesoria.
+                    Ten esto a la mano para llegar mas rapido a una decision util.
                   </h3>
 
                   <ul className='mt-8 space-y-4'>
@@ -507,8 +547,8 @@ export default async function Home({ searchParams }: HomeProps) {
                     <p className='mt-3 leading-7 text-slate-200'>
                       Contratos por elaborar o revisar, escrituras, certificados, promesas,
                       requerimientos, decisiones judiciales, acuerdos familiares, pruebas de
-                      posesion y cualquier antecedente que ayude a entender el riesgo juridico
-                      real.
+                      posesion y cualquier antecedente que ayude a entender donde esta el riesgo y
+                      que conviene hacer primero.
                     </p>
                   </div>
                 </div>
@@ -523,7 +563,7 @@ export default async function Home({ searchParams }: HomeProps) {
             <SectionHeader
               eyebrow='Preguntas frecuentes'
               title='Respuestas que reducen friccion antes de la llamada.'
-              description='La intencion de esta seccion es ayudarte a decidir rapido si esta pagina corresponde al tipo de servicio juridico que estas buscando.'
+              description='La idea es que puedas decidir rapido si esta consulta te ayuda a destrabar lo que hoy te preocupa.'
             />
 
             <div className='mt-10 space-y-4'>
@@ -555,8 +595,8 @@ export default async function Home({ searchParams }: HomeProps) {
                 <div>
                   <SectionHeader
                     eyebrow='Agenda una llamada'
-                    title='Agenda una asesoria juridica inicial.'
-                    description='Completa estos datos para preparar la llamada y ubicar si se trata de contratos, proceso de pertenencia, legalizacion de propiedad u otro asunto civil, familiar o patrimonial.'
+                    title='Pide una asesoria para saber que sigue en tu caso.'
+                    description='Completa estos datos para preparar la llamada y ubicar si se trata de contratos, propiedad u otro asunto civil, familiar o patrimonial.'
                   />
 
                   {hasSavedLead ? (
@@ -769,7 +809,7 @@ export default async function Home({ searchParams }: HomeProps) {
                           type='submit'
                           className={`${primaryLinkClass} w-full sm:w-auto`}
                         >
-                          Solicitar asesoria inicial
+                          Quiero una ruta clara
                         </button>
                         <a
                           href={whatsappHref}
@@ -795,11 +835,11 @@ export default async function Home({ searchParams }: HomeProps) {
                       Que puedes esperar
                     </p>
                     <h3 className='mt-4 font-serif text-3xl leading-tight'>
-                      Una asesoria inicial para decidir con criterio.
+                      Una asesoria para decidir con mas tranquilidad.
                     </h3>
                     <ul className='mt-6 space-y-4'>
                       {[
-                        'Comprender el punto juridico central de tu caso.',
+                        'Entender que esta realmente en juego en tu caso.',
                         'Definir el siguiente paso mas razonable antes de firmar, reclamar, conciliar o formalizar.',
                         'Saber si necesitas una intervencion puntual o un acompanamiento mas amplio.',
                       ].map((item) => (
@@ -823,10 +863,10 @@ export default async function Home({ searchParams }: HomeProps) {
                     </p>
                     <ul className='mt-5 space-y-3 text-base leading-7 text-ink-soft'>
                       {[
-                        'Contratos que necesitas elaborar desde cero o ajustar con mejores clausulas.',
-                        'Documentos que quieres revisar antes de firmar, negociar o reclamar.',
-                        'Inmuebles que requieren proceso de pertenencia o legalizacion para darles seguridad juridica.',
-                        'Consultas civiles, familiares o patrimoniales que necesitan una ruta clara desde el inicio.',
+                        'Contratos que necesitas cerrar con mas tranquilidad.',
+                        'Documentos que quieres revisar antes de comprometerte o reclamar.',
+                        'Inmuebles que requieren proceso de pertenencia o legalizacion para destrabar decisiones patrimoniales.',
+                        'Consultas civiles, familiares o patrimoniales donde hoy necesitas claridad para actuar.',
                       ].map((item) => (
                         <li
                           key={item}
